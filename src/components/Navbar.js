@@ -33,9 +33,9 @@ export default function Navbar(props) {
               </a>
             </li> */}
           </ul>
-            <button type="button" class="btn btn-outline-success" onClick={props.greenMode} style={{color: props.mode==="green"?"white":"parent"}}>Green Mode</button>
-            <button type="button" class="btn btn-outline-danger" onClick={props.redMode}>Red Mode</button>
-            <button type="button" class="btn btn-outline-warning" onClick={props.yellowMode}>Yellow Mode</button>
+            <button type="button" class="btn btn-outline-success mx-1" onClick={props.greenMode} style={{color: props.mode==="green"?"white":"parent"}}>Green Mode</button>
+            <button type="button" class="btn btn-outline-danger mx-1" onClick={props.redMode}>Red Mode</button>
+            <button type="button" class="btn btn-outline-warning mx-1" onClick={props.yellowMode}>Yellow Mode</button>
         
           <div class={`form-check form-switch d-flex mx-2 text-${props.mode === "light"?"dark":"light"}`}>
             <input class="form-check-input" onClick={props.blackMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
